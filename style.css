@@ -1,267 +1,326 @@
-
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400..700&family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap');
-    *{
-        margin: 0px;
-        /* padding: 0px; */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: roboto, 'sans-serif';
+    line-height: 1.6;
+    color:#333;
+    background-color: #f8f9fa;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px;
+}
+h1, h2, h3, h4{
+    margin-bottom: 16px;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+}
+h3{
+    font-size: 1.75rem;
+    color: #007bff;
+}
+h4{
+    color: #333;
+    font-size: 1.25rem;
+}
+p{
+    margin-bottom: 16px;
+    color: #555;
+}
+ul, ol{
+    margin-left: 15px;
+}
+/*===============/*
+header
+*/
+.main-header {
+        background: #ffffff;
+        border-bottom: 1px solid #ddd;
+        padding: 16px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .main-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        width: 90%;
+        max-width: 1100px;
+    }
+    .main-header .logo {
+        font-size: 1.5rem;
+        color: #007bff;
         text-decoration: none;
+        font-weight: 700;
+        margin: 0;
     }
-    
-    h1{
-        font-size: 18px;
+    .main-nav ul {
+        display: flex;
+        list-style: none;
     }
-    header{
+    .main-nav li {
+        margin-left: 16px;
+    }
+    .main-nav a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .main-nav a:hover, .main-nav a.active {
+        color: #007bff;
+        background-color:#f8f9fa;
+    }
+/*=====home====*/
+.hero {
+        background: #ffffff;
+        text-align: center;
+        padding: 130px 16px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+/*=====profile====*/
+.container{
+padding-top: 130px;
+}
+
+.profile-content {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 20px 5px;
-        height: 8px;
-        background-color: lightblue;
-    
+        justify-content: space-evenly;
+        min-width: 100%;
+        box-sizing: border-box;
+        gap: 32px;
+        
     }
-    header a{
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        border-bottom: 2px solid;
-        font-size: 13px;
-        padding: 0px 3px;
-    }
-    #home{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    #home h2{
-        font-size: 25px;
-        text-align: center;
-        margin-bottom: 20px; 
-        margin-top: 30px;
-    }
-   #home p{
-        font-size: 15px;
-        text-align: center;
-        max-width: 50vw;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    img{
-        display: block;
-        /* margin-left: auto; */
-        /* margin-right: auto; */
+
+    .profile-pic {
         width: 250px;
         height: 250px;
-        border-radius: 100%;
-        border: 1px solid;
+        border-radius: 50%;
         object-fit: cover;
-    }
-    #profile h1{
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 15px;
-        margin-top: 15px;
-    }
-    .img{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .em{
-        margin-top: 40px;
-    }
-    .profile1{
-        display: flex;
-        flex-wrap: wrap;
-        /* align-items: center; */
-        justify-content: space-evenly;
-       
-    }
-    #profile h2{
-        border-bottom: 2px solid;
-        margin-top: 20px;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-    #profile ul{
-        list-style-type:disc;
-    }
-    #profile ol{
-        list-style-type: lower-alpha;
-    }
-    #profile .name{
-        font-size: 20px;
-    }
-    #profile{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    #courses{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    .course{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: space-evenly;
-        line-height: 50px; 
-
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .course h2{
-        font-size: 20px;
-        
-    }
-    #courses h1{
-        text-align: center;
-       
-       
-    }
-    
-    .intro{
-        flex-grow: 1;
-        /* margin-top: 30px; */
-        font-size: 20px;
-        font-family: "Caveat", cursive;
-        margin: auto;
-        max-width: 500px;
-        text-align: center;
-    }
-    .item{
-        border: 2px dashed;
-        padding: 20px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 10px 10px 10px 10px gray;
-
-    }
-    table{
-        width: 100%;
-        max-width: 80%;
-        margin: auto;
-        border-collapse: collapse;
-        box-shadow: 5px 5px 5px 5px rgb(53, 52, 52);
-        margin-bottom: 40px;
-    }
-    caption{
-        font-size: 20px;
-        /* font-weight: bold; */
-        margin-bottom: 10px;
-        text-align: center;
-        
-    }
-    th{
-        background-color: skyblue;
-        color: bisque;
-        font-weight: bold;
-        padding: 5px;
-        text-align: center;
-        border: 2px solid black;
-    }
-    td{
-        padding: 5px;
-        text-align: center;
-        border: 2px solid;
-    }
-    #grades h1{
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
-    #grades{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    form{
-        max-width: 50%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 30px;
-        background-color:gainsboro;
-        border: 2px solid;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px 5px rgb(165, 167, 167);
-       
-       
-    }
-    label{
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold ;
-        width: 50%;
-
-}
-    input, textarea, select{
-        padding: 5px;
-        border: 2px solid;
-        border-radius: 5px;
-        font-size: 10px;
-        box-sizing: border-box;
-    }
-    button{
-        width: 100px;
-        background-color: red;
-        color: black;
-        font-weight: bold;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
+        border: 5px solid #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);;
         cursor: pointer;
-        margin-top: 20px;
     }
-    input:focus{
-        background-color:skyblue;
+
+    .profile-details ul, .profile-details ol {
+        margin-bottom: 16px;
     }
-    button:hover{
-        color: red;
-        background-color: white;
-        border: 1px solid red;
-        box-sizing: border-box;
+    /*========course=====*/
+    #courses {
+        background: #ffffff;
     }
-    .input{
-       display: flex;
-       align-items: center;
-       gap: 20px;
-       
-    }
-    .center{
-        text-align: center;
-    }
-    .center h1{
-        display: inline-block;
-        border-bottom: 2px solid;
-    }
-    table tr:nth-child(3){
-        background-color:azure;
-    }
-    table tr:hover{
-        background-color: rgb(225, 217, 217);
-    }
-   address a{
-    text-decoration: none;
-   }
-   #contact{
-    background-color: skyblue;
-    padding: 20px;
-    height: 100vh;
-    display: flex;
     
-   }
-   .contact{
-    background-color: white;
-    box-shadow: 5px 5px 5px 5px rgb(103, 101, 101);
-    border-radius: 5px;
-    max-width: 60%;
-    text-align: center;
-    margin: auto;
-    padding: 50px;
-   }
-   footer{
-    background-color:darkslategray;
-    padding: 10px 5px;
-   }
-   
+    .courses-grid {
+        display: flex;
+        gap: 32px;
+    }
+
+    .course-card {
+        flex: 1; 
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow:  0 4px 12px rgba(0, 0, 0, 0.08);
+        border-left: 5px solid #007bff;
+    }
+
+    .course-card ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .course-card li {
+        padding: 8px 0;
+        border-bottom: 1px solid #f8f9fa;
+    }
+
+    .course-card li:last-child {
+        border-bottom: none;
+    }
+    
+/*====grade====*/
+.grades-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        margin: 0 auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        overflow: hidden; 
+    }
+
+    .grades-table th, .grades-table td {
+        padding: 16px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .grades-table th {
+        background: #007bff;
+        color: #ffffff;
+        font-size: 1.1rem;
+    }
+
+    .grades-table tr:nth-child(even) {
+        background: #e4ebf3;
+    }
+
+
+    .grades-table tr:hover {
+        background-color: #e9ecef;
+    }
+    
+    .grade-a { color: #28a745; font-weight: bold; }
+    .grade-b { color: #ffc107; font-weight: bold; }
+    /*====submit====*/
+    #feedback {
+         background: #ffffff;
+    }
+    
+    .feedback-form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+        border: 1px solid #ddd;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+
+    .form-control:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0,123,255,0.25);
+    }
+
+    textarea.form-control {
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+    .radio-group {
+        display: flex;
+        gap: 16px;
+    }
+
+    .btn-submit {
+        background: #007bff;
+        color: #ffffff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background: #0056b3;
+    }
+
+    /* =================================
+    contact
+       ================================= */
+    .contact-card {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .contact-card p {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+    
+    .contact-card .email-link {
+        display: inline-block;
+        margin-top: 16px;
+        background: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 500px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact-card .email-link:hover {
+         background: #0056b3;
+    }
+    
+    .main-footer {
+        text-align: center;
+        padding: 32px;
+        background:#3f3c3c;
+        margin-top: 32px;
+    }
+    .main-footer p{
+        color: #b8a7a7;
+    }
+    
+/*====responsive====*/
+@media (max-width: 768px) {
+        h2 { font-size: 2rem; }
+        .hero h1 { font-size: 2.5rem; }
+
+        .main-header .container {
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .main-nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .profile-content {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .courses-grid {
+            flex-direction: column;
+        }
+    }
