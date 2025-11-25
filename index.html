@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#header" class="logo">Rupa Banjara</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#grades">Grades</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome To My Student Profile</h1>
+            <p>This is my personal profile where I have included my details. It contains my courses, grades, and contact information, so you can get in touch with me.</p>
+        </section>
+
+        <section id="profile" class="container">
+            <h2>My Profile</h2>
+            <div class="profile-content">
+                    <img src="image/profile.png" alt="my profile" title="Rupa Nayak" class="profile-pic"> <div class="profile-details" >
+                        <div>
+                            <h3>Rupa Banjara</h3>
+                            <p><strong>Course:</strong> Programming</p>
+                            
+                            <h4>Hobbies</h4>
+                            <ul>
+                                <li>Reading</li>
+                                <li>Coding</li>
+                                <li>Listening to music</li>
+                            </ul>
+                            
+                            <h4>Goals</h4>
+                            <ol>
+                                <li>Learn Web Development</li>
+                                <li>Build a Real Project</li>
+                                <li>Become a Full-Stack Developer</li>
+                            </ol>
+                        </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="container-fluid"> <div class="container">
+            <h2>My Courses</h2>
+            <p style="text-align:center; max-width: 700px; margin: 0 auto 32px;">
+                This page shows all the courses I am learning and the ones I have already completed. I love improving my web development skills and tracking my progress here.
+            </p>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Current Courses</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="course-card">
+                    <h3>Completed Courses</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grades" class="container">
+        <h2>My Grade</h2>
+        <p style="text-align:center; margin-bottom: 32px;">12th Grade</p>
+        <table class="grades-table" border="1">
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Grade</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Science</td>
+                    <td class="grade-a">A</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>Physics</td>
+                    <td class="grade-b">B+</td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <td>Chemistry</td> 
+                    <td class="grade-b">B</td>
+                    <td>64</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="feedback" class="container-fluid"> <div class="container">
+        <h2>Submit Feedback</h2>
+        <div class="card feedback-form">
+            <form>
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label>Feedback Type:</label>
+                    <div class="radio-group">
+                        <span>
+                            <input type="radio" id="positive" name="feedback-type" value="Positive" checked>
+                            <label for="positive">Positive</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="negative" name="feedback-type" value="Negative">
+                            <label for="negative">Negative</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rate-us">Rate Us:</label>
+                    <select id="rate-us" class="form-control">
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Average">Average</option>
+                        <option value="Poor">Poor</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-text">Your Feedback:</label>
+                    <textarea id="feedback-text" class="form-control" placeholder="Enter Your Feedback"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div> 
+            
+     </div>
+</section>
+
+<section id="contact" class="container">
+    <div class="card contact-card">
+        <h3>Contact Us:</h3>
+        <p><strong>Email:</strong> rupabanjara25@navgurukul.org</p>
+        <p><strong>Phone:</strong> +91 8770563585</p>
+        <p><strong>Address:</strong> Jashpur, Chattisgarh, India</p>
+        <a href="mailto:rupabanjara25@navgurukul.org" class="email-link">Send Email</a>
+    </div>
+</section>
+    </main>
+    <footer class="main-footer">
+        <p>&copy; 2025 My Student Profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>
